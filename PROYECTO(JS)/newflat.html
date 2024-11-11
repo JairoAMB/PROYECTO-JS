@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/newflat.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="name" id="look-name"></div>
+        <div class="logo">
+            VIP FLAT
+        </div>
+        <div class="pages">
+                <div><a href="./allflats.html">ALL FLAT</a></div>
+                <div><a href="./newflat.html">NEW FLAT</a></div>
+                <div><a href="./profileupdate.html">PROFILE UPDATE</a></div>
+                <div><a href="./home.html">HOME</a></div>
+        </div>
+        <div class="menu-hamburguesa" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="./allflats.html">ALL FLAT</a></li>
+                <li><a href="./newflat.html">NEW FLAT</a></li>
+                <li><a href="./profileupdate.html">PROFILE UPDATE</a></li>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="" id="log-out-user" onclick="eliminarLocalStorage()">LOG OUT</a></li>
+            </ul>
+        </nav>
+        <div class="log-out" onclick="eliminarLocalStorage()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </header>
+    <div >
+        <h1>NEW FLATS</h1>
+    </div>
+    <div>
+        <form onsubmit="submitFlat(event)">
+            <label for="">City</label>
+            <input type="text" name="city" required>
+            <label for="" class="right" >Street Name</label>
+            <input type="text" name="street-name" required>
+            <label for="">Street Number</label>
+            <input type="text" name="street-number" required>
+            <label for="" class="right">Has AC</label>
+            <select name="has-ac" required>
+                <option value="NO">NO</option>
+                <option value="YES">YES</option>
+            </select>
+            <label for="">Area Size</label>
+            <input type="number"  name="area-size" required>
+            <label for="" class="right">Rent price</label>
+            <input type="number" name="price" required>
+            <label for="">Date Available</label>
+            <input type="date"  name="date-available" required>
+            <label for="" class="right">Year Built</label>
+            <input type="number"  name="year-built" maxlength="4" placeholder="Example 1999">
+            <input type="submit" class="submit-flat" value="Create Flat">
+        </form>
+    </div>
+
+
+    
+    <script src="./js/newflat.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/general.js"></script>
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/singup.css">
+    <title>REGISTER</title>
+</head>
+<body class="background-color">
+    <div class="Login-container">
+        <form action="" id="register-form"  onsubmit="submitForm(event)">
+            <h2>SING UP</h2>
+            <div class="items">
+                <span>Email</span>
+                <input type="email" required name="email" id="email-confirm" value="jairo@gmail.com"><br>
+            </div>
+            <div class="items">
+                <span>Password</span>
+                <input type="password" required name="password" minlength="6" value="alex1@"><br>
+            </div>
+            <div class="items">
+                <span>Password Confirm</span>
+                <input type="password" required name="confirm-password" minlength="6" class="password-symbols" value="alex1@" ><br>
+            </div>
+            <div class="items">
+                <span>First Name</span>
+                <input type="text" required name="first-name" minlength="2"><br>
+            </div>
+            <div class="items">
+                <span>Last Name</span>
+                <input type="text" required name="last-name" minlength="2" value="masabanda"><br>
+            </div>
+            <div class="items">
+                <span>Birth Day</span>
+                <input type="date" required name="birth-day" value="2006-10-22"><br>
+            </div>
+            <button type="submit"> REGISTER </button>
+        </form>
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>

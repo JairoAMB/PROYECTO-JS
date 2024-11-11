@@ -1,0 +1,117 @@
+form{
+    padding: 15px 0 0 0;
+    color: white;   
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label{
+    color: black;
+    padding-top: 15px;
+    margin: 0 0 0 25px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 20px ;
+}
+input, select{
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+select{
+    width: 220px;
+    
+}
+.submit-flat{
+    color: #fff;
+    background-color: #346dd6;
+    padding-top: 15px;
+    font-size: 18px;
+    margin-left: 40px;
+}
+.submit-flat:hover{
+    background-color: #346dd6ab;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.651);
+}
+@media (max-width: 482px){
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        text-align: center;
+        margin: auto;
+        padding-top: 80px;
+    }
+    label{
+            font-size: 18px;
+            margin: 0 0 0 25px;
+    }
+    input, select{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 82%;
+        margin-left: 20px;
+    }
+    select{
+        width: 88%;
+    }
+    .submit-flat{
+        margin: 0 auto;
+        padding: 15px 5px;
+        font-size: 18px;
+        width: 50%;
+    }
+}
+@media (min-width: 900px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 20px ;
+    }
+    form{
+        width: 1000px;
+        padding: 25px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+    label{
+        padding-top: 15px;
+        margin: 0 0 0 15px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .submit-flat{
+        margin-left: 20px; 
+        padding: 15px 5px;
+        margin-top: 30px;
+        font-size: 18px;
+        width: 50%;
+    }
+    
+}
+
+
+
+
+

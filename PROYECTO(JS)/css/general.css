@@ -1,0 +1,144 @@
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: #142747;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.header .logo{
+    font-family: Impact;
+    font-size: 25px;
+    letter-spacing: 3px;
+    word-spacing: 0px;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
+    text-align: center;
+}
+.name{
+    color: white;
+    font-size: 15px;
+}
+.pages{
+    color: #fff;
+    display: none;
+}
+.log-out{
+    display: none;
+}
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #19315a;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    margin: 20px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+.menu-hamburguesa {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.menu-hamburguesa span {
+    display: block;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+nav.active {
+    display: flex;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    border-bottom: 1px solid #fff;
+    transition: width 0.3s ease-in-out;
+}
+.pages a.active {
+    border-bottom: 1px solid #fff;
+}
+@media (min-width: 900px){
+    .header .logo{
+        font-family: Impact;
+        font-size: 45px;
+        letter-spacing: 3px;
+        word-spacing: 0px;
+        color: #ffffff;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: italic;
+        font-variant: small-caps;
+        text-transform: none;   
+        text-align: center;
+    }
+    .menu-hamburguesa {
+        display: none;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 70px;
+        background-color: #142747;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        display: grid;  
+        grid-template-columns: 1fr 3fr 4fr 0.5fr; 
+    }
+    .pages{
+        margin-left: auto;
+        color: #fff;
+        display: flex;
+        gap: 20px;
+    }
+    .log-out{
+        color: white;
+        font-size: 18px;
+        display: flex;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

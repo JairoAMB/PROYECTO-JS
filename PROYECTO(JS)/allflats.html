@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALL FLATS</title>
+    <link rel="stylesheet" href=".//css/general.css">
+    <link rel="stylesheet" href="./css/allflats.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="name" id="look-name"></div>
+        <div class="logo">
+            VIP FLAT
+        </div>
+        <div class="pages">
+                <div><a href="./allflats.html">ALL FLAT</a></div>
+                <div><a href="./newflat.html">NEW FLAT</a></div>
+                <div><a href="./profileupdate.html">PROFILE UPDATE</a></div>
+                <div><a href="./home.html">HOME</a></div>
+        </div>
+        <div class="menu-hamburguesa" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="./allflats.html">ALL FLAT</a></li>
+                <li><a href="./newflat.html">NEW FLAT</a></li>
+                <li><a href="./profileupdate.html">PROFILE UPDATE</a></li>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="" id="log-out-user" onclick="eliminarLocalStorage()">LOG OUT</a></li>
+            </ul>
+        </nav>
+        <div class="log-out" onclick="eliminarLocalStorage()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </header>
+    <div>
+        <br><br><br><br>  
+        <form onsubmit="filterTable(event)">
+            <h2>Filters</h2>
+            <input type="text" name="city" placeholder="City">
+            <div><span class="title-filter">PRICE</span>
+                <input type="number" name="min-price" placeholder="Min Price">
+                <label for=""></label>
+                <input type="number" name="max-price" placeholder="Max Price">
+            </div>
+            <div><span class="title-filter">SIZE</span>
+                <input type="number" name="min-size" placeholder="Min Size">
+                <label for=""></label>
+                <input type="number" name="max-size" placeholder="Max Size">
+            </div>
+            <input type="submit" value="Search">
+        </form>
+        
+        <button onclick="orderTable('city')">Order Ciudad</button>
+        <button onclick="orderTable('price')">Order Precio</button>
+        <table style="border: solid" id="flats-table">
+            <thead>
+            <tr>
+                <th>City</th>
+                <th>Street Name</th>
+                <th>Street Number</th>
+                <th>Has AC</th>
+                <th>Area Size</th>
+                <th>Price</th>
+                <th>Date Available</th>
+                <th>Year Built</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="9"> No existen Favoritos</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/newflat.js"></script>
+    <script src="./js/general.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./img/ASD.jpg"></script>
+
+</body>
+</html>

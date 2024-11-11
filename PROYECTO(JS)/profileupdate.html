@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/profileupdate.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>PROFILE UPDATE</title>
+</head>
+<body>
+    <header class="header">
+        <div class="name" id="look-name"></div>
+        <div class="logo">
+            VIP FLAT
+        </div>
+        <div class="pages">
+                <div><a href="./allflats.html">ALL FLAT</a></div>
+                <div><a href="./newflat.html">NEW FLAT</a></div>
+                <div><a href="./profileupdate.html">PROFILE UPDATE</a></div>
+                <div><a href="./home.html">HOME</a></div>
+        </div>
+        <div class="menu-hamburguesa" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="./allflats.html">ALL FLAT</a></li>
+                <li><a href="./newflat.html">NEW FLAT</a></li>
+                <li><a href="./profileupdate.html">PROFILE UPDATE</a></li>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="" id="log-out-user" onclick="eliminarLocalStorage()">LOG OUT</a></li>
+            </ul>
+        </nav>
+        <div class="log-out" onclick="eliminarLocalStorage()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </header>
+    <h1>PROFILE UPDATE</h1>
+    <form action="" id="register-form"  onsubmit="submitForm(event)">
+        <div class="items">
+            <span>Email</span>
+            <input type="email" required name="email" id="email-confirm" readonly><br>
+        </div>
+        <div class="items">
+            <span>New Password</span>
+            <input type="password"  name="password" minlength="6" id="new-password"><br>
+        </div>
+        <div class="items">
+            <span>New Password Confirm</span>
+            <input type="password"  name="confirm-password" minlength="6" class="password-symbols"><br>
+        </div>
+        <div class="items">
+            <span>First Name</span>
+            <input type="text" required name="first-name" minlength="2" id="name"><br>
+        </div>
+        <div class="items">
+            <span>Last Name</span>
+            <input type="text" required name="last-name" minlength="2" id="last-name"><br>
+        </div>
+        <div class="items">
+            <span>Birth Day</span>
+            <input type="date" name="birth-day" readonly id="birth-day"><br>
+        </div>
+        <div class="save">
+        <button type="submit"> SAVE </button>
+        </div>
+    </form>
+    <script src="./js/general.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/profileupdate.js"></script>
+<body>
+</html>
